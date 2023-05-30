@@ -6,8 +6,7 @@ import { Button } from '@mui/material';
 
 function App() {
   const [car, setCar] = useState(0);
-  const [showDetails, setShowDetails] = useState(false);
-
+  
 function handle0Click() {
   setCar(0);
 }
