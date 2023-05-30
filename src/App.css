@@ -1,38 +1,55 @@
-.App {
+body {
+	background: linear-gradient(-45deg, #300b7b, #4e4cbc, #7777d6, #13024a);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  box-shadow: 2px 2px 2px 2px white;
+  border-radius: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+img {
+  height: 25vh;
+  position: relative;
+  animation-name: drive;
+  animation-duration: 15s;
+  animation-direction:alternate;
+  animation-iteration-count: 100;
+  
+}
+
+@keyframes drive {
+  0% {left: 100px; top: 0px}
+  25% {left: 0px; top: 0px}
+  50% {left: -100px; top: 0px}
+  75% {left: 0px; top: 0px}
+  100% {left: 100px; top: 0px}
+}
+
+footer {
+  font-size: 0.7rem;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-shadow: 2px 3px 1px black;
+  box-shadow: 2px 1.5px 1px 1px black;
 }
