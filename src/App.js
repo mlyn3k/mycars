@@ -6,7 +6,7 @@ import { Button } from '@mui/material';
 
 function App() {
   const [car, setCar] = useState(0);
-  
+
 function handle0Click() {
   setCar(0);
 }
@@ -28,7 +28,7 @@ let cars = carsList[car];
   return (
  <>
  <div className='app'>
-        <h1>Spis aut, które posiadałem:</h1>
+        <h1>Moje dotychczasowe auta:</h1>
         <Button variant="contained" size="small" onClick={handle0Click}>Pierwsze</Button>
         <Button variant="contained" size="small" onClick={handle1Click}>Drugie</Button>
         <Button variant="contained" size="small" onClick={handle2Click}>Trzecie</Button>

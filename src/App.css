@@ -1,12 +1,11 @@
 body {
 	background: linear-gradient(-45deg, #300b7b, #4e4cbc, #7777d6, #13024a);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 4s ease infinite;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 5%
 }
 
 @keyframes gradient {
@@ -22,13 +21,13 @@ body {
 }
 
 .app {
-  box-shadow: 2px 2px 2px 2px white;
-  border-radius: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-}
 
+  margin-left: 5%;
+  margin-right: 5%;
+}
+h1, h2, h3 {
+  text-shadow: 1px 1px 1px white;
+}
 img {
   height: 25vh;
   position: relative;
