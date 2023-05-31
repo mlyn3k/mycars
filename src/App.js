@@ -10,13 +10,15 @@ function App() {
   function handlePreviousClick() {
     if (car > 0) {
       setCar(car - 1)
-    } else { setCar(0) }
+    } else { 
+      setCar(0) }
   }
 
   function handleNextClick() {
     if (car < 3) {
       setCar(car + 1)
-    } else { setCar(3) }
+    } else { 
+      setCar(3) }
   }
 
   let selectedCar = carsList[car];
