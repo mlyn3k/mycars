@@ -8,16 +8,18 @@ function App() {
   const [car, setCar] = useState(0);
 
   function handlePreviousClick() {
-    if (car > 0) { setCar(car - 1) }
-    else { setCar(0) }
+    if (car > 0) {
+      setCar(car - 1)
+    } else { setCar(0) }
   }
 
   function handleNextClick() {
-    if (car < 3) { setCar(car + 1) }
-    else { setCar(3) }
+    if (car < 3) {
+      setCar(car + 1)
+    } else { setCar(3) }
   }
 
-  let cars = carsList[car];
+  let selectedCar = carsList[car];
 
   return (
     <>
@@ -37,15 +39,15 @@ function App() {
         >Nowsze</Button>
 
 
-        <h2>Marka: {cars.brand}</h2>
-        <h3>Model: {cars.model}</h3>
+        <h2>Marka: {selectedCar.brand}</h2>
+        <h3>Model: {selectedCar.model}</h3>
         <img
-          src={cars.src}
-          alt={cars.alt}
+          src={selectedCar.src}
+          alt={selectedCar.alt}
         />
-        <h4>Rok produkcji: {cars.year}</h4>
-        <h4>Kolor mojego egzemplarza: {cars.color}</h4>
-        <p>{cars.details}</p>
+        <h4>Rok produkcji: {selectedCar.year}</h4>
+        <h4>Kolor mojego egzemplarza: {selectedCar.color}</h4>
+        <p>{selectedCar.details}</p>
       </div>
       <footer>
         Powered by Łukasz Młynarczyk
